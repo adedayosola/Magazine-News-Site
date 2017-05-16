@@ -1,0 +1,743 @@
+@import "./public";
+@import "./images";
+// @import "./images-1";
+
+body{
+	background-color: $white;
+}
+.page-contents {
+	@include page-contents-padding($page-contents);
+	margin-top: $standard-margin + $nav-height;
+}
+
+.section-one {
+	border: $border-grid;
+}
+
+.section-two {
+	border: $border-grid;
+}
+
+.row-div {
+	background-color:$grey2;
+	border: 0 none;
+	color: $grey2;
+	height: 1px;
+	width: 100%;
+}
+
+
+// styles for jumbotron
+
+.jumbotron {
+	width: 100%;
+	text-align: center;
+	position: relative;
+	padding: $jumbotron-padding 0;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: $jumbotron-top-margin;
+}
+// styles for menu  and footer bar
+.menu {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	border-bottom: $borderline;
+	padding: $menu-padding;
+}
+.menu-item{
+	a{
+		text-decoration: none;
+		color: $black;
+	}
+}
+// styles for columns
+
+.three-columns {
+	@include row-padding;
+	display: flex;
+	justify-content: space-between;
+}
+
+.two-columns {
+	display: flex;
+	justify-content: space-between;
+}
+
+.fa-chevron-down {
+	margin-left: $comment-chevron-margin;
+}
+
+.topic-img {
+	position: relative;
+	padding: 30% 0;
+
+	img {
+		width: 100%;
+	}
+}
+;
+.row-col {
+	@include rol-col-styles(30%);
+}
+
+
+.row-col-lg {
+	border-right: $borderline;
+	width: 65%;
+	padding-right: 2.5%;
+}
+
+.author {
+	display: flex;
+	margin: $author-margin;
+}
+
+.author-img {
+	background-color: $grey;
+	border-radius: 100%;
+	width: $author-img-dimension;
+	height: $author-img-dimension;
+}
+
+.author-name {
+	@include author;
+
+	p {
+		margin: $author-name-para-margin;
+	}
+}
+
+.src {
+	color: $blue;
+
+	.timestamp {
+		color: $grey;
+		padding-left: $timestamp-padding;
+	}
+}
+
+.section {
+	@include author;
+	display: inline-block;
+	margin: 0;
+	padding-top: $author-section-top-padding;
+	padding-bottom: $author-section-bottom-padding;
+	border-bottom: $borderline;
+	text-transform: uppercase;
+}
+
+.article-source {
+	@include author;
+	color: grey;
+	margin: 0;
+}
+
+.article-head {
+	font-weight: bold;
+	font-size: 16px;
+	font-family: $font;
+	text-align: justify;
+	margin: 0;
+	line-height: 1.3;
+}
+
+.article-txt {
+	font-size: 15px;
+	font-family: $font;
+	text-align: justify;
+	line-height: 1.3;
+	margin: $article-txt-margin;
+}
+
+.add-comment {
+	@include author;
+	color: grey;
+}
+
+.col-2 {
+	border-right: $borderline;
+	border-left: $borderline;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+}
+
+.read-more {
+	margin-top: $standard-margin;
+
+	text-align: center;
+
+	a {
+		text-decoration: none;
+		padding: $button;
+		font-family: $font;
+		font-size: 14px;
+		font-weight: 500;
+		border: $borderline;
+		background-color: white;
+		color: $orange;
+
+		&:hover {
+			background-color: black;
+		}
+	}
+}
+
+.actions {
+	display: inline;
+	align-items: flex-start;
+
+	.fa {
+		padding: $action-elements-padding;
+		font-size: 20px;
+		border-radius: 50%;
+	}
+
+	.action1 {
+		color: $red;
+	}
+
+	.action2 {
+		color: $grey;
+		background-color: $grey;
+	}
+
+	.action3 {
+		color: $grey;
+		background-color: $grey;
+	}
+}
+
+////////////////////////////////////////////////////////
+//style for magazine
+.navigation{
+  position: absolute;
+  top:40%;
+  font-size: 50px;
+  color: white;
+  background-color: $grey;
+  transition: 0.6s ease;
+  z-index: 3;
+  line-height: 0;
+  padding: $navigation-button-padding;
+  box-sizing: border-box;
+  &:hover{
+    background-color: black;
+
+  }
+  &.left-chevron{
+    left: $chevron-position;
+    border-radius:$left-chevron-border-radius;
+
+  }
+  &.right-chevron{
+    right: $chevron-position;
+    border-radius:$right-chevron-border-radius;
+  }
+
+}
+
+.mag-main-container{
+  display: flex;
+  border: $borderline;
+
+}
+.mag-reader-container{
+  display: grid;
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+}
+
+
+.mag-reader{
+  position: relative;
+  height: $mag-reader-height;
+  width: 100%;
+  max-height: $mag-reader-max-height;
+  box-sizing: border-box;
+  font-size: 0;
+  line-height: 0;
+}
+
+.mag-pages{
+  position: absolute;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  left: -0.1px;
+}
+.action-nav-row{
+  display: flex;
+  justify-content: space-between;
+	padding: $action-navigation-row-padding;
+	border-bottom: $border-solid;
+	border-color: $grey2;
+	margin: auto 0;
+    .page-counter{
+    p{
+      margin: 0 $action-nav-item;
+      .book-icon{
+        margin-right: $action-nav-item;
+      }
+    }
+  }
+  .action-nav{
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+
+.mag-side-bar{
+  width: 30%;
+}
+.action-nav-items{
+  position: relative;
+  padding: 0 $action-nav-item;
+	cursor: pointer;
+	color: $grey1;
+	&:hover {
+		color: $black;
+	}
+}
+.left-page{
+  position: relative;
+  width: 50%;
+  height: 100%;
+  float: left;
+  background-position: center right;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+.right-page{
+
+  position: relative;
+  width: 50%;
+  height: 100%;
+  float: right;
+  background-position: center left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 0;
+}
+.mag-side-bar{
+  padding: 0.5%;
+  background-color: $black;
+}
+.mag-side-bar-desc{
+  padding: $mag-side-bar-padding;
+  p{
+    margin: $mag-side-bar-para-margin;
+    line-height: 1;
+  }
+  & p.mag-side-bar-subhead{
+    color: $red;
+    font-size: 25px;
+  }
+  & p.mag-side-bar-src{
+    color: $orange;
+    font-size: 20px;
+  }
+  & p.mag-side-bar-date{
+    color: $orange;
+    font-size: 14px;
+  }
+  & p.mag-side-bar-text{
+    color: $white;
+    text-align: justify;
+    font-size: 16px;
+    margin-top: $mag-side-bar-txt-margin;
+  }
+
+}
+.nav-bar-row{
+  display: flex;
+  border: $borderline;
+}
+.rec-list-row{
+  margin-top: $standard-margin;
+}
+.rec-list{
+  display: flex;
+  justify-content: space-between;
+  padding-top: $rec-list-padding;
+}
+.rec-list-header{
+  background-color: $orange;
+  color: white;
+  padding: $rec-list-padding/2 $rec-list-padding;
+}
+.rec-list-item{
+  border: $border-solid ;
+	border-color: $grey3;
+  width: $rec-list-item-width;
+  background-color: $grey2;
+
+}
+.rec-list-img{
+  position: relative;
+  top: 0;
+  width: $rec-list-img-width;
+  margin: $rec-list-img-margin;
+  padding:  $rec-list-img-padding;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.rec-list-desc{
+  margin-bottom: $rec-list-desc-margin;
+  margin-left: $rec-list-desc-margin;
+  p{
+    margin: 0;
+    line-height: 1.3;
+    color: $black;
+  }
+}
+.rec-list-src{
+  font-size: 12px;
+}
+.rec-list-date{
+  font-size: 10px;
+}
+.mag-see-more{
+  text-align: center;
+  color: $orange;
+  font-weight: bold;
+	margin-top: $view-more-margin/2;
+	margin-bottom: $view-more-margin;
+
+}
+
+.display-none{
+  display: none;
+}
+
+
+////////////////////////////////////////////////////////
+
+//style for publisher page
+
+.pub-profile{
+  padding-left:  $page-contents;
+  padding-right:  $page-contents;
+	margin: $standard-margin 0;
+}
+.pub-profile-summary{
+}
+.pub-profile-pic{
+	margin: $profile-pic-margin;
+	width:$profile-pic-width;
+	padding:$profile-pic-padding;
+  background-position: center;
+  background-repeat: no-repeat;
+	background-size: cover;
+	background-color: $grey2;
+	border-radius: $profile-border-radius;
+}
+
+.pub-profile-summary{
+	font-family: $font;
+	text-align: justify;
+}
+.pub-profile-name{
+	text-align: center;
+	margin: 0;
+	font-size: 30px;
+	color: $black;
+	text-transform: uppercase;
+}
+.pub-profile-location{
+	text-align: center;
+	margin: 0;
+	color: $grey;
+	font-size: 10px;
+}
+.pub-profile-desc{
+	text-align: center;
+	margin: $profile-txt-margin;
+	color: $grey;
+}
+.pub-profile-numbers{
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	text-transform: uppercase;
+	p{
+		margin: $profile-txt-margin;
+		padding: $profile-num-padding;
+	}
+}
+
+////////////////////////////////////////////
+//user profile
+
+.user-profile{
+  padding-left:  $page-contents;
+  padding-right:  $page-contents;
+	margin: $standard-margin 0;
+}
+.user-profile-summary{
+  // display:flex;
+}
+.user-profile-pic{
+	margin: $profile-pic-margin;
+	width:$profile-pic-width;
+	padding:$profile-pic-padding;
+  background-position: center;
+  background-repeat: no-repeat;
+	background-size: cover;
+	background-color: $grey2;
+	border-radius: $profile-border-radius;
+}
+
+.user-profile-summary{
+	font-family: $font;
+	text-align: justify;
+}
+.user-profile-name{
+	text-align: center;
+	margin: 0;
+	font-size: 30px;
+	color: $black;
+	text-transform: uppercase;
+}
+.user-profile-location{
+	text-align: center;
+	margin: 0;
+	color: $grey;
+	font-size: 10px;
+}
+.user-profile-desc{
+	text-align: center;
+	margin: $profile-txt-margin;
+	color: $grey;
+}
+.user-profile-numbers{
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	text-transform: uppercase;
+	p{
+		margin: $profile-txt-margin;
+		padding: $profile-num-padding;
+	}
+}
+
+
+
+
+///////////////////////////////////////////////
+
+//sign-up and sign in page-contents
+.signup-main-container{
+	font-family: $font;
+	p{
+		margin: 2px;
+	}
+
+}
+.sign-up-top{
+	text-align: center;
+	color: $black;
+}
+.create-acct{
+	margin: $create-acct-margin;
+	font-size: 20px;
+}
+.form{
+	input{
+		width:$form-input-width;
+		height: $form-input-height;
+		padding-left: $form-input-padding;
+		margin-bottom: $form-input-margin;
+		border: $border-solid;
+		border-color: $grey2;
+		&:focus{
+			outline: none;
+		}
+	}
+
+}
+.signup-container{
+	width:$signup-container-width;
+	margin: $signup-container-margin;
+	padding: $signup-container-padding;
+}
+.sign-enter{
+	margin-top: $standard-margin;
+}
+
+
+.login-checkbox{
+	display: flex;
+}
+.signup-terms{
+	display: flex;
+	justify-content: space-between;
+	font-size: 12px;
+	color: $black;
+	}
+	.password-forget{
+		a{
+			text-decoration: none;
+			color: $black;
+		}
+	}
+.form-footer{
+	a{
+		color: $red;
+		text-decoration: none;
+	}
+}
+.checkbox{
+	padding: $checkbox-padding;
+	margin-bottom: $checkbox-margin;
+	border: border-solid ;
+	border-color: $grey2;
+	font-size: 20px;
+}
+.social-icons{
+	margin-bottom: $social-icons-margin;
+	display: flex;
+	justify-content: center;
+	img{
+		width: $social-icons-img-width;
+		margin: $social-icons-img-margin;
+	}
+}
+
+
+
+/////////////////////////////////////
+//////////////////////////////////////////////
+// mobile phones media query styles
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+	.page-contents {
+
+		margin-top: $nav-height + $standard-margin*2;
+	}
+
+	.row-col {
+		width: 100%;
+	}
+
+	.three-columns {
+		display: block;
+		width: 100%;
+	}
+
+	.two-columns {
+		visibility: hidden;
+		position: fixed;
+	}
+
+	.page-contents {
+		margin-left: $page-contents-margin-responsive;
+		margin-right: $page-contents-margin-responsive;
+	}
+
+	.col-2 {
+		border: none;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+
+	.mag-side-bar{
+		display: none;
+	}
+	.rec-list{
+		flex-wrap: wrap;
+	}
+	.rec-list-item{
+		width: $rec-list-item-width-responsive;
+		margin-bottom: $rec-list-item-margin-responsive;
+	}
+ .rec-list-row2{
+	 display: none;
+ }
+ .rec-list-row3{
+	display: none;
+ }
+ .left-page{
+	 width: 100%;
+ }
+.right-page{
+	display: none;
+}
+.signup-container{
+	width:90%;
+	margin-left: $signup-container-margin-responsive;
+	margin-right: $signup-container-margin-responsive;
+	padding: $signup-container-padding-responsive ;
+}
+
+
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+	.row-col {
+		width: 100%;
+	}
+
+	.three-columns {
+		display: block;
+		width: 100%;
+	}
+
+	.two-columns {
+		visibility: hidden;
+		position: fixed;
+	}
+
+	.page-contents {
+		margin-top: $nav-height* 2 + $standard-margin;
+		margin-left: $page-contents-margin-responsive;
+		margin-right: $page-contents-margin-responsive;
+	}
+
+	.col-2 {
+		border: none;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.mag-side-bar{
+		display: none;
+	}
+	.rec-list{
+		flex-wrap: wrap;
+	}
+	.rec-list-item{
+		width: $rec-list-item-width-responsive;
+		margin-bottom: $rec-list-item-margin-responsive;
+	}
+	.left-page{
+ 	 width: 100%;
+  }
+ .right-page{
+ 	display: none;
+ }
+
+
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.page-contents {
+		margin-top: $nav-height* 2 + $standard-margin;
+		// margin-left: $page-contents-margin-responsive;
+		// margin-right: $page-contents-margin-responsive;
+	}
+}
+@media only screen and (max-width: 1200px) {}
+
+
+
+
+
+////////////////////
+
+/*# sourceMappingURL=style.css.map */

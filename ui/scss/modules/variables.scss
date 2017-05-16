@@ -1,0 +1,109 @@
+@import "./mixin";
+@import url('https://fonts.googleapis.com/css?family=Karla|Palanquin');
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700,700i');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+//colors
+$grey: #9E9E9E;
+$grey1: #888;
+$grey2:#eee;
+$grey3:#ccc;
+$red: #e60000;
+$orange: #dc4e04;
+$black: #000;
+$blue:#33ccff;
+$white:white;
+
+//font
+$font: Karla;
+
+//general
+$page-contents:3%;
+$standard-margin:30px;
+$page-contents-margin-responsive:25px;
+$border-grid: none;
+$borderline: solid 1px #ddd;
+$button: 3px 30px 3px 30px;
+$menu-padding: 20px 0 20px 0px;
+$border-solid: 1px solid;
+$view-more-margin:20px;
+$logo-img-padding:40px;
+$btn-margin:10px;
+
+//navigation
+$nav-height: 55px;
+$nav-box-shadow:0 1px 2px #eee;
+$nav-bar-margin:20px;
+$nav-search-icon-margin-right:10px;
+$nav-notification-icon-margin:0 60px ;
+$search-input-width:350px;
+$search-input-height:40px;
+$search-input-margin:5px;
+$nav-search-border-width:1px 0 1px 1px;
+$search-box-border-radius:5px;
+$search-icon-padding:10px;
+$search-icon-border-radius:0 5px 5px 0;
+$search-box-padding:0 10px;
+
+
+
+//index page
+$jumbotron-padding: 20%;
+$jumbotron-top-margin:20px;
+$author-margin: 10px 0 30px;
+$author-img-dimension: 40px;
+$author-name-para-margin:0 0 0 5px;
+$timestamp-padding: 10px;
+$author-section-top-padding:20px;
+$author-section-bottom-padding:5px;
+$comment-chevron-margin: 20px;
+$article-txt-margin:5px 0;
+$action-elements-padding: 10px;
+$nav-chevron-margin: 20px;
+
+//magazine page
+$navigation-button-padding:2px;
+$left-chevron-border-radius:5px 0 0 5px;
+$right-chevron-border-radius:0 5px 5px 0;
+$chevron-position:5%;
+$mag-reader-height:80vh;
+$mag-reader-max-height:1200px;
+$action-navigation-row-padding: 5px 0;
+$action-nav-item:20px;
+$mag-side-bar-padding: 10px 0;
+$mag-side-bar-para-margin:5px 20px;
+$mag-side-bar-txt-margin:30px;
+$rec-list-padding:20px;
+$rec-list-item-width:15%;
+$rec-list-img-padding:60% 0;
+$rec-list-img-margin:5%;
+$rec-list-img-width:90%;
+$rec-list-desc-margin:5%;
+$rec-list-item-width-responsive:32%;
+$rec-list-item-margin-responsive:5px;
+$signup-container-padding-responsive:5px 5px 5px 5px;
+$signup-container-margin-responsive:5%;
+
+
+//publisher  and user profile page
+$profile-pic-margin: 10px 45%;
+$profile-pic-padding:5% 0;
+$profile-border-radius:100px;
+$profile-txt-margin:5px 0;
+$profile-num-padding:0 10px;
+$profile-pic-width:10%;
+
+
+//sign in and sign up
+$create-acct-margin: 10px;
+$form-input-height: 30px;
+$form-input-width:99%;
+$form-input-padding:5px;
+$form-input-margin:10px;
+$signup-container-width:30%;
+$signup-container-margin: 60px 35% 120px 35%;
+$signup-container-padding: 30px 30px 30px 20px;
+$checkbox-padding:5px;
+$checkbox-margin:10px;
+$social-icons-margin:20px;
+$social-icons-img-width:30px;
+$social-icons-img-margin:5px;

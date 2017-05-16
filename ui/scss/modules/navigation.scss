@@ -1,0 +1,134 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: $nav-height ;
+  border-bottom: $borderline;
+  box-shadow: $nav-box-shadow;
+  position: fixed;
+  width: 100%;
+  top:0;
+  z-index: 12;
+  background: $white;
+
+
+}
+
+.nav-bar-left {
+  display: flex;
+  background-color: $white;
+  align-items: center;
+  padding-left: $page-contents;
+}
+
+.nav-bar-right {
+  background-color: $white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-right: $page-contents;
+  a{
+  @include nav-link;
+  margin-left: $nav-bar-margin;
+  background-color: $orange;
+  font-family: $font;
+  color: $white;
+  font-weight: bold;
+  &:hover{
+    background-color: $black;
+    }
+  }
+}
+
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  nav{
+    display: block;
+
+  }
+
+  .nav-bar-right {
+		display: none;
+	}
+
+  .logo-img {
+    padding: $logo-img-padding;
+
+  }
+
+  .nav-bar-left {
+    border-bottom: $borderline;
+    box-shadow: $nav-box-shadow;
+
+        // margin: 10px ;
+        justify-content: space-between;
+        // padding-left: 0;
+    a {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding-right:  0;
+      text-align: right;
+    }
+  }
+
+
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  nav{
+    display: block;
+
+  }
+  .logo-img {
+    padding: $logo-img-padding;
+
+  }
+  .nav-bar-right {
+		display: none;
+	}
+
+
+  .nav-bar-left {
+
+        // margin: $nav-bar-margin ;
+        justify-content: space-between;
+        padding-left: 0;
+        border-bottom: $borderline;
+        box-shadow: $nav-box-shadow;
+    a {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding-right:  0;
+      text-align: right;
+    }
+  }
+
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  nav{
+    display: block;
+
+  }
+
+  .nav-bar-right {
+    justify-content: space-around;
+    border-bottom: $borderline;
+    box-shadow: $nav-box-shadow;
+    padding-top: 10px;
+  }
+
+  .nav-bar-left {
+        // margin: $nav-bar-margin ;
+        justify-content: space-between;
+        padding-top: 10px;
+        margin-bottom: none;
+
+  }
+
+}
+@media only screen and (max-width: 1200px) {}
+/*# sourceMappingURL=style.css.map */

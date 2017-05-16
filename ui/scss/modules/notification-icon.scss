@@ -1,0 +1,8 @@
+.notification-icon{
+  margin: $nav-notification-icon-margin ;
+  i{
+    &:hover{
+      color: $orange;
+    }
+  }
+}

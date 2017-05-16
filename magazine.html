@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Magazine Name</title>
+  <link rel="stylesheet" type="text/css" href="./ui/scss/style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+  <meta name="viewport" content="width = device-width" initial-scale=1>
+</head>
+
+<body>
+  <div class="container">
+    <nav >
+      <!-- nav bar left -->
+      <div class="nav-bar-left">
+        <div class="logo-img">
+
+        </div>
+        <div class="nav-bar-left-text">
+          <a href="#">TOP STORIES</a>
+          <a href="#">YOUR NEWS</a>
+          <a href="#">AROUND THE WORLD</a>
+        </div>
+      </div>
+      <!-- /.nav bar left -->
+      <!-- nav bar right -->
+      <div class="nav-bar-right">
+        <form id="search-form" class="search-box">
+          <input id="search_input" class="nav-search" type="search" name="search"placeholder="Type in your search request here."/>
+          <span id="search" class="nav-bar-icon search-icon" ><i class="fa fa-search nav-bar-icon" aria-hidden="true" name="search"></i></span>
+        </form>
+        <span class="notification-icon"><i class="fa fa-bell " aria-hidden="true"></i></span>
+        <a  class="user-login " href="signin.html">SIGN IN</a>
+      </div>
+      <!--/. nav bar right -->
+    </nav>
+
+
+    <!--nav-->
+
+    <div class="page-contents">
+    <div class="mag-main-container">
+      <div id="mag-reader-container" class="mag-reader-container">
+        <div class="action-nav-row">
+          <div class="page-counter">
+              <p class="page-no"><span class="book-icon"><i class="fa fa-columns" aria-hidden="true"></i></span>page 1 of 24</p>
+          </div>
+          <div class="action-nav">
+          <div class="action-nav-items"><span><i class="fa fa-download" aria-hidden="true"></i></span></div>
+          <div class="action-nav-items"><span><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></span></div>
+          <div class="action-nav-items"><span><i class="fa fa-share" aria-hidden="true"></i></span></div>
+          <div class="action-nav-items" onclick="toggleScreen()"><span><i class="fa fa-arrows-alt" aria-hidden="true"></i></span></div>
+        </div>
+      </div>
+        <!-- chevron for navigation -->
+        <div class="left-chevron navigation">
+          <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        </div>
+        <div class="right-chevron navigation">
+          <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </div>
+
+
+        <div id="mag-reader" class="mag-reader">
+          <div class="mag-pages">
+            <div class="left-page"></div>
+            <div class="right-page"></div>
+          </div>
+        </div>
+
+      </div>
+      <div class="mag-side-bar">
+        <div class="mag-side-bar-desc">
+          <p class="mag-side-bar-subhead">Person of the Year</p>
+          <p class="mag-side-bar-src">Entrepreneurs</p>
+          <p class="mag-side-bar-date">27 April 2016</p>
+          <p class="mag-side-bar-text">Find out all about what one you want to know today
+              Find out all about what one you want to know today
+              Find out all about what one you want to know today
+          </p>
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+
+    <div class="rec-list-row rec-list-row1">
+      <div class="rec-list-header">SIMILAR</div>
+      <div class="rec-list">
+        <div class="rec-list-item rec-list-item1">
+            <div class="rec-list-img rec-list-img1"></div>
+            <div class="rec-list-desc">
+              <p class="rec-list-subhead">Person of the Year</p>
+              <p class="rec-list-src">Time</p>
+              <p class="rec-list-date">27 April 2016</p>
+            </div>
+        </div><!-- rec-list-item -->
+
+        <div class="rec-list-item rec-list-item2">
+          <div class="rec-list-img rec-list-img2"></div>
+          <div class="rec-list-desc">
+            <p class="rec-list-subhead">Person of the Year</p>
+            <p class="rec-list-src">Time</p>
+            <p class="rec-list-date">27 April 2016</p>
+          </div>
+        </div>
+        <div class="rec-list-item rec-list-item3">
+          <div class="rec-list-img rec-list-img3"></div>
+          <div class="rec-list-desc">
+            <p class="rec-list-subhead">Person of the Year</p>
+            <p class="rec-list-src">Time</p>
+            <p class="rec-list-date">27 April 2016</p>
+          </div>
+        </div>
+        <div class="rec-list-item rec-list-item4">
+          <div class="rec-list-img rec-list-img4"></div>
+          <div class="rec-list-desc">
+            <p class="rec-list-subhead">Person of the Year</p>
+            <p class="rec-list-src">Time</p>
+            <p class="rec-list-date">27 April 2016</p>
+          </div>
+        </div>
+        <div class="rec-list-item rec-list-item5">
+          <div class="rec-list-img rec-list-img5"></div>
+          <div class="rec-list-desc">
+            <p class="rec-list-subhead">Person of the Year</p>
+            <p class="rec-list-src">Time</p>
+            <p class="rec-list-date">27 April 2016</p>
+          </div>
+        </div>
+        <div class="rec-list-item rec-list-item6">
+          <div class="rec-list-img rec-list-img6"></div>
+          <div class="rec-list-desc">
+            <p class="rec-list-subhead">Person of the Year</p>
+            <p class="rec-list-src">Time</p>
+            <p class="rec-list-date">27 April 2016</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="mag-see-more">SEE MORE</div>
+
+    </div>
+    <div class="rec-list-row rec-list-row2">
+      <div class="rec-list-header">YOU MAY ALSO LIKE TO READ</div>
+      <div class="rec-list">
+        <div class="rec-list-item rec-list-item7">
+            <div class="rec-list-img rec-list-img7"></div>
+            <div class="rec-list-desc">
+              <p class="rec-list-subhead">Person of the Year</p>
+              <p class="rec-list-src">Time</p>
+              <p class="rec-list-date">27 April 2016</p>
+            </div>
+        </div><!-- rec-list-item -->
+
+        <div class="rec-list-item rec-list-item8">
+          <div class="rec-list-img rec-list-img8"></div>
+          <div class="rec-list-desc">
+            <p class="rec-list-subhead">Person of the Year</p>
+            <p class="rec-list-src">Time</p>
+            <p class="rec-list-date">27 April 2016</p>
+          </div>
+        </div>
+        <div class="rec-list-item rec-list-item9">
+          <div class="rec-list-img rec-list-img9"></div>
+          <div class="rec-list-desc">
+            <p class="rec-list-subhead">Person of the Year</p>
+            <p class="rec-list-src">Time</p>
+            <p class="rec-list-date">27 April 2016</p>
+          </div>
+        </div>
+        <div class="rec-list-item rec-list-item10">
+          <div class="rec-list-img rec-list-img10"></div>
+          <div class="rec-list-desc">
+            <p class="rec-list-subhead">Person of the Year</p>
+            <p class="rec-list-src">Time</p>
+            <p class="rec-list-date">27 April 2016</p>
+          </div>
+        </div>
+        <div class="rec-list-item rec-list-item11">
+          <div class="rec-list-img rec-list-img11"></div>
+          <div class="rec-list-desc">
+            <p class="rec-list-subhead">Person of the Year</p>
+            <p class="rec-list-src">Time</p>
+            <p class="rec-list-date">27 April 2016</p>
+          </div>
+        </div>
+        <div class="rec-list-item rec-list-item12">
+          <div class="rec-list-img rec-list-img12"></div>
+          <div class="rec-list-desc">
+            <p class="rec-list-subhead">Person of the Year</p>
+            <p class="rec-list-src">Time</p>
+            <p class="rec-list-date">27 April 2016</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="mag-see-more">SEE MORE</div>
+
+
+    </div>
+    <div class="rec-list-row rec-list-row3">
+      <div class="rec-list-header">TOP READ</div>
+      <div class="rec-list">
+        <div class="rec-list-item rec-list-item13">
+            <div class="rec-list-img rec-list-img13"></div>
+            <div class="rec-list-desc">
+              <p class="rec-list-subhead">Person of the Year</p>
+              <p class="rec-list-src">Time</p>
+              <p class="rec-list-date">27 April 2016</p>
+            </div>
+        </div><!-- rec-list-item -->
+
+        <div class="rec-list-item rec-list-item14">
+          <div class="rec-list-img rec-list-img14"></div>
+          <div class="rec-list-desc">
+            <p class="rec-list-subhead">Person of the Year</p>
+            <p class="rec-list-src">Time</p>
+            <p class="rec-list-date">27 April 2016</p>
+          </div>
+        </div>
+        <div class="rec-list-item rec-list-item15">
+          <div class="rec-list-img rec-list-img15"></div>
+          <div class="rec-list-desc">
+            <p class="rec-list-subhead">Person of the Year</p>
+            <p class="rec-list-src">Time</p>
+            <p class="rec-list-date">27 April 2016</p>
+          </div>
+        </div>
+        <div class="rec-list-item rec-list-item16">
+          <div class="rec-list-img rec-list-img16"></div>
+          <div class="rec-list-desc">
+            <p class="rec-list-subhead">Person of the Year</p>
+            <p class="rec-list-src">Time</p>
+            <p class="rec-list-date">27 April 2016</p>
+          </div>
+        </div>
+        <div class="rec-list-item rec-list-item17">
+          <div class="rec-list-img rec-list-img17"></div>
+          <div class="rec-list-desc">
+            <p class="rec-list-subhead">Person of the Year</p>
+            <p class="rec-list-src">Time</p>
+            <p class="rec-list-date">27 April 2016</p>
+          </div>
+        </div>
+
+        <div class="rec-list-item rec-list-item18">
+          <div class="rec-list-img rec-list-img18"></div>
+          <div class="rec-list-desc">
+            <p class="rec-list-subhead">Person of the Year</p>
+            <p class="rec-list-src">Time</p>
+            <p class="rec-list-date">27 April 2016</p>
+          </div>
+
+        </div>
+
+
+      </div>
+      <div class="mag-see-more">SEE MORE</div>
+
+    </div>
+
+
+
+
+  </div> <!--page contents-->
+    <!-- footer -->
+    <footer class="footer-menu">
+      <a class="about-us footer" href="#">About Us</a>
+      <a class="blog footer" href="#">Blog</a>
+      <a class="tools footer" href="#">Tools</a>
+      <a class="help footer" href="#">Help</a>
+      <a class="privacy footer" href="#">Privacy Policy</a>
+      <a class="sitemap footer" href="#">Sitemap</a>
+    </footer>
+    <!--/. footer -->
+
+
+
+
+
+  </div>
+  <script src="./ui/js/core/script.js"></script>
+</body>
+
+</html>

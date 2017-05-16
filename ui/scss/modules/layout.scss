@@ -1,0 +1,90 @@
+@import "./variables"; // styles for container elements
+
+body {
+  margin: 0;
+  width: 100%;
+  font-family: $font !important;
+  min-width: 320px;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+.logo-img {
+  padding: 20px;
+  background-color: $grey;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.nav-bar-left {
+  // display: flex;
+  // background-color: white;
+  // align-items: center;
+  // padding-left: $page-contents;
+
+  .fa-bars {
+    display: block;
+    position: absolute;
+    font-size: 16px;
+    color: $red;
+  }
+
+  a {
+    @include nav-link;
+    color: $orange;
+    margin-left: 10px;
+    font-weight: bold;
+
+    &:hover {
+      background-color: $orange;
+      color: white;
+    }
+  }
+}
+
+.nav-bar-right {
+  // background-color: white;
+  // display: flex;
+  // justify-content: space-around;
+  // align-items: center;
+  // padding-right: $page-contents;
+    a {
+    @include nav-link;
+    margin-left: 20px;
+  }
+}
+
+
+
+
+.layout-holder {
+  margin: 75vh;
+  background-color: $grey;
+}
+// styles for menu  and footer bar
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: $borderline;
+  padding: $menu-padding;
+}
+
+
+#app {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+// mobile phones media query styles
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+}
+@media only screen and (max-width: 1200px) {}
+/*# sourceMappingURL=style.css.map */

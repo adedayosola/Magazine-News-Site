@@ -1,0 +1,30 @@
+@mixin btn-nav{
+  padding: $button;
+}
+.btn-link{
+  a {
+    @include nav-link;
+    color: $orange;
+    margin-left: $btn-margin;
+    font-weight: bold;
+
+    &:hover {
+      background-color: $orange;
+      color: $white;
+    }
+  }
+}
+.btn-default{
+  text-align: center;
+  a {
+    @include nav-link;
+    color: $white;
+    margin-left: $btn-margin;
+    font-weight: bold;
+    background-color: $orange;
+    &:hover {
+      background-color: $black;
+      color: $white;
+    }
+  }
+}
